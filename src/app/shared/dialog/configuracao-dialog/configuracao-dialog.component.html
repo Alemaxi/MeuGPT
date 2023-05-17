@@ -1,0 +1,12 @@
+<h1 mat-dialog-title>Configuração</h1>
+
+<mat-dialog-content>
+    <mat-form-field class="fullWidth">
+        <mat-label>Token</mat-label>
+        <input matInput style="width:100%" [formControl]="tokenControl">
+      </mat-form-field>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button [disabled]="tokenControl.invalid" matDialogClose=""
+  (click)="salvarConfiguracao()">Salvar</button>
+</mat-dialog-actions>

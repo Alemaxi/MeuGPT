@@ -1,0 +1,12 @@
+<h1 mat-dialog-title>Criar nova pesquisa</h1>
+
+<mat-dialog-content>
+    <mat-form-field class="fullWidth">
+        <mat-label>Nome da pesquisa</mat-label>
+        <input matInput style="width:100%" [formControl]="pesquisaControl">
+      </mat-form-field>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button [disabled]="pesquisaControl.invalid" matDialogClose=""
+  (click)="CriarPesquisa()">Criar</button>
+</mat-dialog-actions>

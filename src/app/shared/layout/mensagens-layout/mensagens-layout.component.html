@@ -1,0 +1,28 @@
+<div class="pagina" [class.pagina-closed]="fechado">
+    <div class="header">
+        <h2>{{title}}</h2>
+        <span class="material-symbols-outlined" style="cursor: pointer;" (click)="Fechar()">
+            close
+        </span>
+    </div>
+
+    <div class="mensagens">
+        <div class="mensagem" *ngFor="let mensagem of mensagens.reverse()" (click)="MensagemSelecionada(mensagem)"
+            [class.mensagemEstaSelecionada]="MensagemEstaSelecionada(mensagem)">
+            <h4 style="padding: 0px; margin: 0px;"><b> {{mensagem.role}}</b></h4>
+            <div [innerHTML]="mensagem.content | quebraDeLinha">
+            </div>
+        </div>
+    </div>
+
+    <div class="actions">
+        <textarea   rows="5" [formControl]="textoControl"
+            class="mensagemTexto">
+        </textarea>
+        <div class="botoes">
+            <span class="material-symbols-outlined whiteSmoke" (click)="EnviarMensagem()">
+                send
+            </span>
+        </div>
+    </div>
+</div>

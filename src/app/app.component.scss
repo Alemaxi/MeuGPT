@@ -1,0 +1,69 @@
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(49, 49, 49); 
+    color: white;
+}
+
+
+.corpo {
+    width: 100%;
+    height: 93.5%;
+    box-sizing: border-box;
+    background-color: rgb(221, 221, 221);
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.pesquisas{
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgb(187, 186, 186);
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 10px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.pesquisa{
+    width: 100%;
+    padding: 20px 20px 20px 20px;
+    background-color: rgb(229, 238, 255);
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+}
+
+.pesquisa:active {
+    background-color: rgb(228, 234, 250);
+}
+
+.menu-direita {
+    display: flex;
+    cursor: pointer;
+}
+
+.espaco-esquerda{
+    margin-left: 15px;
+}
+
+.desbloqueioGeral {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0,.12);
+    top: 0px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.bloqueioGeral {
+    display: flex;
+}
